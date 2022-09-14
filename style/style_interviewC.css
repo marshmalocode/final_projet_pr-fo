@@ -1,0 +1,313 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+  }
+  body {
+    width: 100%;
+    height: 100vh;
+    background-color:#000;
+  }
+  img {
+    width: 300px;
+    height: 500px;
+    object-fit:cover;
+    -webkit-box-reflect:below 2px linear-gradient(transparent, transparent, #0004);
+    transform-origin:center;
+    transform:perspective(800px) rotateY(25deg);
+    transition:0.5s;
+  }
+  .parent { 
+    display: grid; 
+    grid-template-columns: 0.2fr 0.8fr; 
+    grid-template-rows: 1fr; 
+    grid-column-gap: 0px;
+    grid-row-gap: 0px; 
+	padding-top: 200px;
+    }
+  .container {
+    width: 100%;
+    height: 100vh;
+    max-width:1000px;
+    max-height: 750px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    justify-content: space-between;
+	padding-left: 250px;
+  }
+
+  .container:hover img {
+    opacity:0.3;
+  }
+  .container img:hover {
+    transform:perspective(800px)       rotateY(0deg);
+    opacity:1;
+  }
+ *,*:before,*:after {
+        /* indique au navigateur de prendre en compte 
+        la bordure et le remplissage dans la valeur définie 
+        pour la largeur et la hauteur.*/
+        box-sizing: border-box;
+    }
+/* travaillons maintenans la section des écris de la page index*/
+:after {
+	/* juste pour un bug*/
+	content: "";
+}
+/*suivons avec la nav-bar car elle se trouve sur toute les pages */
+.navbar {
+    /* nous allons lui donnez un effet flottant et une position et un fonds transparent*/
+    float: left;
+	position: relative;
+	top: 0;
+    left: 0;
+	background: transparent;
+}
+ul{
+	list-style-type: none;
+}
+/* touchons un coup a la liste non ordonné de la navbar */
+.navbar .ul-nav {
+  text-align: center;
+}
+/* nous allons commencé avec les balise génerale 
+des liste a puce ordonnée mais nous reviendrons individuellement dessus plus tard  */
+
+nav ul li {
+    /* commencons par lui assigné sa posioton et la place qu'elle va prendre 
+    placons le bagckground sa couleur et modifion le texte*/
+  position: relative;
+  top: 200px;
+  left: 50px;
+  width: 70px;
+  height: 60px;
+  cursor: pointer;
+  background: #A5B5AE;
+  text-transform: uppercase;
+  /* la j'ai du debug avec l'aide d'un dev pro*/
+	transition:all .4s ease-out;
+}
+/* nous allons commencé avec les ellement parent enfant
+ en les etablissent avec leur diférence fonction*/
+
+ nav ul li:after {
+	position: absolute;
+	color: #A5B5AE;
+	top:0;
+	left: 70px;
+	width: 70px; 
+	height: 60px;
+  opacity:.5;
+  transform: perspective(400px) rotateY(90deg);
+	transform-origin: 0 100%;
+	transition:all .4s ease-out;
+}
+ul li:nth-child(1):after { 
+	content: "Home";
+	line-height: 65px;
+}
+ul li:nth-child(2):after { 
+	content: "Interview";
+	line-height: 65px;
+}
+ul li:nth-child(3):after { 
+	content: "Expo";
+	line-height: 65px;
+}
+
+nav ul li:hover {
+	transform: translateX(-70px);
+}
+
+nav ul li:hover:after {
+    opacity: 1;
+	transform: perspective(400px) rotateY(0deg) scale(1) ;
+}
+/* replacons la div nav bar avec ces eccart */
+nav ul li > div {
+	display: inline-block;
+	padding: 25px 0;
+	background: transparent;
+}
+
+nav ul li div {
+    position: relative;
+}
+
+/* nous allons créé maintetnan les logo a l'interieur de nos cube déroulant 
+on démare avec la page index et le fond du toit vous allez comprendre les parents maintenant*/
+.roof {
+	width: 0;
+	height: 0;
+	top:5px;
+	left: 14px;
+	border-style: solid;
+	border-width: 0 21px 15px 21px;
+	border-color: transparent transparent #ffffff transparent;
+}
+/* un petit triangle pour faire un toit fin */
+.roof-edge {
+	position: absolute;
+	z-index: 20;
+	left: -17px;
+	top: 5px;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 0 17px 12px 17px;
+	border-color: transparent transparent #A5B5AE transparent;
+}
+/* et rajouton un autre triangle pour faire la structure du toit */
+.roof-edge:after {
+	position: absolute;
+	left: -14.5px;
+	top: 3px;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 0 14.5px 10px 14.5px;
+	border-color: transparent transparent white transparent;
+}
+/* faisons la facade de la maison */
+.front {
+	position: relative;
+	top: 7px;
+	width: 28.5px;
+	height: 20px;
+	margin: 0 auto;
+	background: white;
+}
+/* ajutons lui une porte */
+.front:after {
+	position: absolute;
+	background: #A5B5AE;
+	width: 11px;
+	height: 13px;
+	bottom: 0;
+	left:9px;
+}
+
+/* place au logo de la page interview  en premier le fond */
+.head {
+	width: 32px;
+	height: 35px;
+	top: 9px;
+	left: 20px;
+	background: white;
+	border-radius:8px;
+}
+/*oeil gauche*/
+.eyes {
+	width: 8px;
+	height: 5px;
+	border-radius: 50%;
+	position: absolute;
+	top: 10px;
+	left: 5px;
+	background: #A5B5AE;
+}
+/*oeil droit*/
+.eyes:after {
+	width: 8px;
+	height: 5px;
+	border-radius: 50%;
+	position: absolute;
+	top: 0;
+	left: 14px;
+	background: #A5B5AE;
+}
+/* on va lui donner une barbe */
+.beard {
+	width: 32px;
+	height: 17px;
+	background: #A5B5AE;
+	border:2px solid white;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	border-radius:0 0 8px 8px;
+}
+/* en parent de la barbe placon le nez*/
+.beard:after {
+	position: absolute;
+	top:-2px;
+	left: 11px;
+	background: white;
+	width:6px;
+	height: 4px;
+	border-left:1px solid #A5B5AE;
+	border-right:1px solid #A5B5AE;
+}
+/* rajoutons lui une bouche le pauvre */
+.head:after {
+	width: 4px;
+	height: 10px;
+	background: white;
+	position: absolute;
+	border-radius:4px 0 0 4px;
+	top:21px;
+	left: 14px;
+	transform:rotate(270deg);
+}
+
+/* passons au dernier la page de l'exposition en premier comme toujours le fond */
+.paper {
+	position: relative;
+	height:32px;
+	width: 29px;
+	top: 10px;
+	left: 20px;
+	background: white;
+	border:2px solid white;
+}
+/*mettons une section titre*/
+.paper:after {
+	position: absolute;
+	top:1px;
+	left: 0px;
+	width: 25px;
+	height: 29px;
+	background: white;
+	border-top:4px solid #A5B5AE;
+}
+/* rajouton quelque ligne de paragraphe en utulisant les parents expliqué plus haut pour completé */
+.lines {
+	position: absolute;
+	top: 16px;
+	left: 30px;
+	width: 0px;
+	box-shadow: 0 0 0 1px #A5B5AE;
+}
+.lines:after {
+	position: absolute;
+	top: 4px;
+	left: 3px;
+	width: 14px;
+	box-shadow: 0 0 0 1px #A5B5AE;
+}
+
+.lines:nth-child(2) {
+	position: absolute;
+	top: 25px;
+	left: 25px;
+	width: 11px;
+}
+
+.lines:nth-child(2):after {
+	position: absolute;
+	top: 4px;
+	left: -3px;
+	width: 11px;
+}
+
+.lines:nth-child(3) {
+	position: absolute;
+	top: 35px;
+	left: 29px;
+	width: 14px;
+}
+
+.lines:nth-child(3):after {
+	display: none;
+}
