@@ -284,7 +284,7 @@ display: none;
   }
 
   .layout1{
-    background-color: white opacit 50;
+    background-color: rgba(255, 255, 255, 0.685);
     margin-left: 200px;
     margin-right: 200px;
   }
@@ -295,6 +295,7 @@ display: none;
   .coo{
     float: right;
     margin-left: 50px;
+    padding-top: 50px;
   }
   .text1{
     text-align: center;
@@ -325,20 +326,16 @@ display: none;
   text-align: right;
   margin: 25px;
 }
-.text5{
-  display: flex;
-  margin: 50px;
-  }
-.text51{
-  display: column;
-  margin: 25px;
-}
+
 .text6{
   display: flex;
   margin: 50px;
   }
 .text61{
   display: column;
-  text-align: right;
+  text-align: left;
   margin: 25px;
+}
+.plangoogle{
+  margin-bottom: 100px;
 }
