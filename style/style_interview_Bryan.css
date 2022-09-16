@@ -9,6 +9,13 @@
 /* juste pour un bug*/
 content: "";
 }
+.background{
+    background-image: url(../img/imgint.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
 /*suivons avec la nav-bar car elle se trouve sur toute les pages */
 .navbar {
 /* nous allons lui donnez un effet flottant et une position et un fonds transparent*/
@@ -37,7 +44,7 @@ left: 0px;
 width: 70px;
 height: 60px;
 cursor: pointer;
-background: #A5B5AE;
+background: transparent;
 text-transform: uppercase;
 /* la j'ai du debug avec l'aide d'un dev pro*/
 transition:all .4s ease-out;

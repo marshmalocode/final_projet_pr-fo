@@ -27,8 +27,8 @@ content: "";
 /* nous allons lui donnez un effet flottant et une position et un fonds transparent*/
 float: left;
 position: relative;
-top: 0;
-left: 0px;
+top: -100px;
+left: 50px;
 background: transparent;
 z-index: 10;
 }
