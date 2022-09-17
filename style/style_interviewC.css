@@ -60,8 +60,8 @@ img {
     /* nous allons lui donnez un effet flottant et une position et un fonds transparent*/
     float: left;
 	position: relative;
-	top: 0;
-    left: 0;
+	top: -250px;
+    left: 50px;
 	background: transparent;
 }
 ul{
@@ -83,7 +83,7 @@ left: 50px;
 width: 70px;
 height: 60px;
 cursor: pointer;
-background: #A5B5AE;
+background: transparent;
 text-transform: uppercase;
 /* la j'ai du debug avec l'aide d'un dev pro*/
 	transition:all .4s ease-out;
