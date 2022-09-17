@@ -57,24 +57,24 @@ transform: perspective(400px) rotateY(90deg);
 transform-origin: 0 100%;
 transition:all .4s ease-out;
 }
-ul li:nth-child(1):after { 
+.ul-nav li:nth-child(1):after { 
 content: "Home";
 line-height: 65px;
 }
-ul li:nth-child(2):after { 
+.ul-nav li:nth-child(2):after { 
 content: "Interview";
 line-height: 65px;
 }
-ul li:nth-child(3):after { 
+.ul-nav li:nth-child(3):after { 
 content: "Expo";
 line-height: 65px;
 }
 
-nav ul li:hover {
+nav .ul-nav li:hover {
 transform: translateX(-70px);
 }
 
-nav ul li:hover:after {
+nav .ul-nav li:hover:after {
 opacity: 1;
 transform: perspective(400px) rotateY(0deg) scale(1) ;
 }
