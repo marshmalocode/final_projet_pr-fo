@@ -1,3 +1,13 @@
+.background{
+    background-image: url(../img/imgint.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: scroll;
+    background-size: cover;
+	background-size: 1500px;
+	margin-top: -30px;
+	margin-bottom: -30px;
+}
 *,*:before,*:after {
     /* indique au navigateur de prendre en compte 
     la bordure et le remplissage dans la valeur définie 
@@ -14,9 +24,10 @@ content: "";
 /* nous allons lui donnez un effet flottant et une position et un fonds transparent*/
 float: left;
 position: relative;
-top: 0;
-left: 0px;
+top: -100px;
+left: 50px;
 background: transparent;
+z-index: 10;
 }
 ul{
 list-style-type: none;
@@ -269,11 +280,7 @@ display: none;
 	box-sizing: border-box;
 }
 
-body{
-	background: url("../img/pexels-sora-shimazaki-5668858.jpg");
-	background-size: 900px;
-	background-size: cover;
-}
+
 
 h2 {
 	text-shadow: 1px 1px 2px rgba(0,0,0,1);

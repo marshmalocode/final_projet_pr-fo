@@ -18,6 +18,7 @@ ainsi que les regle de police générale et certaine regles que le css va affect
     font-size: 14px;
     /* pour raprocher un peu les texte et en em je voulais tester */
     line-height: 1.4em;
+	font-family: 'montserrat','sans-serif';
 }
  *,*:before,*:after {
         /* indique au navigateur de prendre en compte 
@@ -62,9 +63,9 @@ nav ul li {
 	transition:all .4s ease-out;
 }
 /* nous allons commencé avec les ellement parent enfant
- en les etablissent avec leur diférence fonction*/
+en les etablissent avec leur diférence fonction*/
 
- nav ul li:after {
+nav ul li:after {
 	position: absolute;
 	color: #A5B5AE;
 	top:0;
@@ -287,9 +288,9 @@ on démare avec la page index et le fond du toit vous allez comprendre les paren
 /* passons maintenant a la section et aux ecris de la page d'acceuil*/
 section {
 	/* plaçon la section en bas a droite*/
-  	position: relative;
+position: relative;
 	/* positionnons la section à droite */
-  	left: 100px;
+left: 100px;
 }
 /* passons au h1 */
 .h1-index {
@@ -309,7 +310,7 @@ section {
 /* le h2 */
 .h2-index {
 	/* modifion la taille de notre police */
-  font-size: 24px;
+font-size: 24px;
 }
 .layout1{
 	background-color: aqua;
