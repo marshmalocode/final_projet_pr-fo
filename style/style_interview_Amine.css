@@ -1,12 +1,15 @@
+body{
+    width: 100%;
+    height: 100vh;
+    
+    margin: 0px;
+}
 .background{
     background-image: url(../img/imgint.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    background-attachment: scroll;
+    background-attachment: fixed;
     background-size: cover;
-	background-size: 1500px;
-	margin-top: -30px;
-	margin-bottom: -30px;
 }
 *,*:before,*:after {
     /* indique au navigateur de prendre en compte 
@@ -289,6 +292,7 @@ h2 {
 	text-transform: uppercase;
 	text-align: center;
 	padding-top: 20px;
+	margin-top: 0px;
 }
 
 .chat-container {
@@ -298,11 +302,12 @@ h2 {
 	overflow: hidden;
 	padding: 20px;
 	position: relative;
-	width: 1000px;
+	justify-content: center;
+	width: 1200px;
 	height: 600px;
 	max-width: 100%;
 	overflow: scroll;
-	left: 500px;
+	left: 350px;
 	top: 50px;
 }
 
@@ -362,35 +367,14 @@ h2 {
 	padding: 10px 15px;
 	width: 100%;
 }
-
-footer {
-    background-color: #222;
-    color: #fff;
-    font-size: 14px;
-    bottom: 0;
-    position: fixed;
-    left: 0;
-    right: 0;
-    text-align: center;
-    z-index: 999;
-}
-
-footer p {
-    margin: 10px 0;
-}
-
-footer i {
-    color: red;
-}
-
-footer a {
-    color: #3c97bf;
-    text-decoration: none;
-}
 .conclusion{
 	text-align: center;
-	padding-top: 100px;
-	padding-bottom: 200px;
-	padding-left: 600px;
-	padding-right: 500px;
+	display: flex;
+	position: relative;
+	background-color: rgba(255, 255, 255, 0.685);
+	border-radius: 5%;
+    margin-left: 500px;
+    margin-right: 300px;
+	margin-top: 150px;
+	margin-bottom: 400px;
 }
