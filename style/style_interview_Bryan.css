@@ -400,8 +400,6 @@ footer a {
 	position: relative;
 	background-color: rgba(255, 255, 255, 0.685);
 	border-radius: 5%;
-    margin-left: 500px;
-    margin-right: 300px;
-	margin-top: 150px;
-	margin-bottom: 400px;
+    margin-left: 400px;
+    margin-right: 400px;
 }
