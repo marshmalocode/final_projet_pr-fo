@@ -301,6 +301,7 @@ left: 100px;
     font-family: 'montserrat','sans-serif';
     /* donnons lui un effet 3D avec plusieur ombrages */
     text-transform: uppercase;
+	text-align: end;
     text-shadow: 
     1px 1px 0px #31db87,
 	2px 2px 0px #31DB87,
@@ -311,6 +312,7 @@ left: 100px;
 .h2-index {
 	/* modifion la taille de notre police */
 font-size: 24px;
+text-align: end;
 }
 .layout1{
 	background-color: aqua;
